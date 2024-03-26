@@ -1,0 +1,17 @@
+.nav-bar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  flex: row;
+  justify-content: end;
+
+  & a {
+    margin: 0 5px;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 20px;
+    list-style-type: none;
+  }
+}

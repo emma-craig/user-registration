@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "username": "Emma",
+      "email": "emma.test@test.com",
+      "password": "password123",
+      "id": "ac1f"
+    },
+    {
+      "username": "Jane",
+      "email": "jane.test@test.com",
+      "password": "password456",
+      "id": "0221"
+    },
+    {
+      "username": "Eliza",
+      "email": "eliza.test@test.com",
+      "password": "password123",
+      "id": "0ed5"
+    },
+    {
+      "id": "cc7e",
+      "username": "jeremy",
+      "email": "emma.craig@getflowbox.com",
+      "password": "jsdhfjkhsdkjf"
+    },
+    {
+      "id": "e928",
+      "username": "johnny",
+      "email": "emma.craig@photoslurp.com",
+      "password": "fghfhfhfh"
+    },
+    {
+      "id": "d4c9",
+      "username": "iona",
+      "email": "emma.craig@getflowbox.com",
+      "password": "aksjhfkjhasdkfjhsak"
+    },
+    {
+      "id": "6d4d",
+      "username": "charlie",
+      "email": "emma.craig@getflowbox.com",
+      "password": "vnvnbvbvbn"
+    },
+    {
+      "id": "ce86",
+      "username": "aaron",
+      "email": "emma.craig@getflowbox.com",
+      "password": "ndsabndbnabsDNFA"
+    },
+    {
+      "id": "5ccb",
+      "username": "paula",
+      "email": "emma.ryal@gmail.com",
+      "password": "nbnbnnb"
+    },
+    {
+      "id": "aa5a",
+      "username": "emma",
+      "email": "emma.craig@getflowbox.com",
+      "password": "cnvnzskdjfnv"
+    },
+    {
+      "id": "85de",
+      "username": "carmen",
+      "email": "emma.craig@getflowbox.com",
+      "password": "jksdhfjkhskjdf"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input, button {
+  margin: 5px;
+  width: 150px;
+}
+.error-message {
+  color: red;
+}
+label {
+  font-weight: 600;
+}
+
+
