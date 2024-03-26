@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Registration = () => {
 
@@ -9,8 +9,8 @@ const Registration = () => {
       };
       const [formData, setFormData] = useState(initialState);
       const [errors, setErrors] = useState({});
-      const [usernameTouched, setUsernameTouched] = useState(false);
-      const [emailTouched, setEmailTouched] = useState(false);
+      const [usernameTouched, setUsernameTouched] = useState<boolean>(false);
+      const [emailTouched, setEmailTouched] = useState<boolean>(false);
     
       useEffect(() => {
         setEmailTouched(false);
@@ -86,6 +86,14 @@ const Registration = () => {
         setEmailTouched(false);
         setUsernameTouched(false);
       };
+
+      const handleUsernameBlur = () => {
+        setUsernameTouched(true)
+      }
+
+      const handleEmailBlur = () => {
+        setEmailTouched(true)
+      }
     
       return (
         <div className="App">
@@ -97,7 +105,7 @@ const Registration = () => {
               type="text"
               value={formData.username || ''}
               onChange={handleTextInput}
-              onBlur={setUsernameTouched}></input>
+              onBlur={handleUsernameBlur}></input>
             <span className="error-message">{errors['username']}</span>
     
             <label htmlFor="email">Email:</label>
@@ -105,7 +113,7 @@ const Registration = () => {
               name="email"
               value={formData.email || ''}
               onChange={handleTextInput}
-              onBlur={setEmailTouched}></input>
+              onBlur={handleEmailBlur}></input>
             <span className="error-message">{errors['email']}</span>
     
             <label htmlFor="password">Password:</label>
