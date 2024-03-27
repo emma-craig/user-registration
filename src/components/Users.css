@@ -1,0 +1,15 @@
+.user-box {
+  border: 10px grey;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  background-color: aqua;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}

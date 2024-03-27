@@ -10,26 +10,28 @@ import React from 'react';
 const App = () => {
   const users = useFetchUsers();
   return (
-    <UserContext.Provider value={users}>
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route
-            path="/"
-            element={<Registration />}
-          />
+    <div className="app">
+      <UserContext.Provider value={users}>
+        <Router>
+          <NavBar />
+          <Routes>
+            <Route
+              path="/"
+              element={<Registration />}
+            />
 
-          <Route
-            path="registration"
-            element={<Registration />}
-          />
-          <Route
-            path="users"
-            element={<Users />}
-          />
-        </Routes>
-      </Router>
-    </UserContext.Provider>
+            <Route
+              path="registration"
+              element={<Registration />}
+            />
+            <Route
+              path="users"
+              element={<Users />}
+            />
+          </Routes>
+        </Router>
+      </UserContext.Provider>
+    </div>
   );
 };
 
