@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { IError, IUser } from '../types/types';
+import { useNavigate } from 'react-router-dom';
 const Registration = () => {
+  const navigate = useNavigate();
   const initialState: IUser = {
     username: '',
     email: '',
@@ -62,7 +64,10 @@ const Registration = () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
-    }).then(() => alert('User saved successfully'));
+      // eslint-disable-next-line no-restricted-globals
+    })
+      .then(() => alert('User saved successfully'))
+      .then(() => navigate('./../users'));
   };
 
   const handleTextInput = (e: { target: { name: any; value: any } }) => {
